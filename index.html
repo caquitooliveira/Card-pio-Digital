@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles/output.css">
+
+    <title>Hamburgueria</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="assets/familia.png" alt="logo burguer" class="w-34 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white">My Burguer</h1>
+
+
+
+
+
+
+
+    <span class="text-white font-medium">Valparaiso, ypiranga mall</span>
+
+    <div class="bg-green-500 px-4 py-1 rounded-lg mt-4" id="date-span">
+        <span class="text-white font-medium"> Ter á Dom - 18:00 as 22:00 </span>
+    </div>
+
+
+
+        </div>
+    </header>
+    <!--FIM HEADER-->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Cardápio
+    </h2>
+
+    <!--INICIO MENU-->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-15">
+
+<!--PRODUTOS-->
+<div class="flex gap-2">
+
+    <img src="assets/azul.png" alt="hamburguer azul" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300"/>
+
+    <div>
+        <p class="font-bold">Blue Burguer</p>
+        <p class="text-sm">Simples e gostoso. Suculento blend de 160g de angus, cheddar e maionese da casa em nosso pão brioche.</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 27.90</p>
+            <button class=" bg-gray-900 px-4 rounded add-to-cart-btn"
+            data-name="Blue Burguer"
+            data-price="27.90"
+            
+            
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+
+
+    </div>
+
+</div>
+<!--FIM PRODUTOS-->
+
+
+    <!--PRODUTOS-->
+    <div class="flex gap-2">
+
+    <img src="assets/amarelo.png" alt="hamburguer amarelo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300"/>
+
+    <div>
+        <p class="font-bold">Yellow Burguer</p>
+        <p class="text-sm">O prazer na leveza de um burger de 160g de coxa e sobrecoxa com salada de rúcula e tomate cereja, queijo minas fresco, alho crocante e maionese da casa em nosso pão francês artesanal.</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 31.90</p>
+            <button class=" bg-gray-900 px-4 rounded add-to-cart-btn"
+            data-name="Yellow Burguer"
+            data-price="31.90"
+            
+            
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+
+
+    </div>
+
+</div>
+<!--FIM PRODUTOS-->
+
+             <!--PRODUTOS-->
+            <div class="flex gap-2">
+
+           <img src="assets/preto.png" alt="hamburguer preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300"/>
+            
+          <div>
+          <p class="font-bold">Black Burguer</p>
+          <p class="text-sm">O xodó. Uma deliciosa maionese defumada, blend de 160g de angus e cheddar barbecue no pão brioche. Tudo isso acompanhado de uma difícil escolha: bacon empanado artesanal ou cebola empanada + bacon.</p>
+            
+          <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$ 33.90</p>
+          <button class=" bg-gray-900 px-4 rounded add-to-cart-btn"
+           data-name="Black Burguer"
+           data-price="33.90"
+                                    
+                                 
+          >
+          <i class="fa fa-cart-plus text-lg text-white"></i>
+           </button>
+           </div>
+            
+            
+           </div>
+            
+             </div>
+                        <!--FIM PRODUTOS-->
+
+                <!--PRODUTOS-->
+    <div class="flex gap-2">
+
+        <img src="assets/rosa-1.png" alt="hamburguer rosa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300"/>
+            
+        <div>
+        <p class="font-bold">Pink Burguer</p>
+        <p class="text-sm">O xodó. Uma deliciosa maionese defumada, blend de 160g de angus e cheddar barbecue no pão brioche. Tudo isso acompanhado de uma difícil escolha: bacon empanado artesanal ou cebola empanada + bacon.</p>
+            
+        <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 33.90</p>
+        <button class=" bg-gray-900 px-4 rounded add-to-cart-btn"
+        data-name="Pink Burguer"
+        data-price="33.90"
+                                    
+                                
+        >
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+        </div>
+            
+            
+        </div>
+            
+            </div>
+                        <!--FIM PRODUTOS-->
+
+            
+    <!--PRODUTOS-->
+    <div class="flex gap-2">
+
+    <img src="assets/familia.png" alt="hamburguer combo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300"/>
+        
+    <div>
+    <p class="font-bold">Family combo</p>
+    <p class="text-sm">Combo de minis hamburguer acompanhados de fritas, serve ate 5 pessoas.</p>
+        
+    <div class="flex items-center gap-2 justify-between mt-3">
+    <p class="font-bold text-lg">R$ 33.90</p>
+    <button class=" bg-gray-900 px-4 rounded add-to-cart-btn"
+    data-name="Family combo"
+    data-price="84.90"
+                                
+                            
+    >
+    <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+    </div>
+        
+        
+    </div>
+        
+        </div>
+                    <!--FIM PRODUTOS-->
+
+    <!--PRODUTOS-->
+    <div class="flex gap-2">
+
+    <img src="assets/fritas.png" alt="batata frita" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300"/>
+        
+    <div>
+    <p class="font-bold">Fritas</p>
+    <p class="text-sm">Porção de batatas frita.</p>
+        
+    <div class="flex items-center gap-2 justify-between mt-3">
+    <p class="font-bold text-lg">R$ 19.90</p>
+    <button class=" bg-gray-900 px-4 rounded add-to-cart-btn"
+    data-name="Fritas"
+    data-price="19.90"
+                                
+                            
+    >
+    <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+    </div>
+        
+        
+    </div>
+        
+        </div>
+                    <!--FIM PRODUTOS-->                    
+
+        </main>
+
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Bebidas
+            </h2>
+        </div>
+
+
+        <!--Bebidas-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-15" id="menu">
+
+            
+    <!--BEBIDA PRODUTO-->
+    <div class="flex gap-2 w-full">
+
+    <img src="assets/refri-1.png" alt="Coca-cola" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300"/>
+        
+    <div class="w-full ">
+    <p class="font-bold">Coca-Cola</p>
+     
+    <div class="flex items-center gap-2 justify-between mt-3">
+    <p class="font-bold text-lg">R$ 5.90</p>
+    <button class=" bg-gray-900 px-4 rounded add-to-cart-btn"
+    data-name="Coca-Cola"
+    data-price="5.90"
+                                
+                            
+    >
+    <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+    </div>
+        
+        
+    </div>
+        
+        </div>
+             <!--FIM BEBIDA PRODUTO-->
+
+
+     <!--BEBIDA PRODUTO-->
+     <div class="flex gap-2 w-full">
+
+        <img src="assets/refri-2.png" alt="Guaraná" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300"/>
+            
+        <div class="w-full ">
+        <p class="font-bold">Guaraná</p>
+         
+        <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 5.90</p>
+        <button class=" bg-gray-900 px-4 rounded add-to-cart-btn"
+        data-name="Guaraná"
+        data-price="5.90"
+                                    
+                                
+        >
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+        </div>
+            
+            
+        </div>
+            
+            </div>
+                 <!--FIM BEBIDA PRODUTO-->
+
+
+                  <!--BEBIDA PRODUTO-->
+     <div class="flex gap-2 w-full">
+
+        <img src="assets/refri-3.png" alt="Fanta Laranja" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300"/>
+            
+        <div class="w-full ">
+        <p class="font-bold">Fanta Laranja</p>
+         
+        <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 5.90</p>
+        <button class=" bg-gray-900 px-4 rounded add-to-cart-btn"
+        data-name="Fanta Laranja"
+        data-price="5.90"
+                                    
+                                
+        >
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+        </div>
+            
+            
+        </div>
+            
+            </div>
+                 <!--FIM BEBIDA PRODUTO-->
+
+                         <!--BEBIDA PRODUTO-->
+     <div class="flex gap-2 w-full">
+
+        <img src="assets/refri-4.png" alt="Sprite" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300"/>
+            
+        <div class="w-full ">
+        <p class="font-bold">Sprite</p>
+         
+        <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 5.90</p>
+        <button class=" bg-gray-900 px-4 rounded add-to-cart-btn"
+        data-name="Sprite"
+        data-price="5.90"
+                                    
+                                
+        >
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+        </div>
+            
+            
+        </div>
+            
+            </div>
+                 <!--FIM BEBIDA PRODUTO-->
+
+
+        </div>
+        <!--Fim Bebidas-->
+
+    </div>
+    <!--FIM MENU-->
+
+    <!--MODAL CART-->
+    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-modal">
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+
+            <p class="font-bold mt-3">Endereço de entrega:</p>
+            <input type="text"
+            placeholder="Seu endereço"
+            id="address"
+            class="w-full border-2 p-1 rounded my-2">
+
+            <p class="text-red-500 hidden" id="address-warn">Digite o endereço!</p>
+
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn" class="bg-red-500 text-white px-4 py-1 rounded">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!--FIM MODAL CART-->
+
+   <!--CARRINHO DE COMPRAS-->
+    <footer class="w-full bg-blue-400 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+      <button class="flex items-center gap-2 text-white font-bold"
+      id="cart-btn">
+        (<span id="cart-count">0</span>)
+        Meu Carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+      </button>
+
+    </footer>
+
+    <!--FIM CARRINHO DE COMPRAS-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
